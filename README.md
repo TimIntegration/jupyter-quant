@@ -63,9 +63,9 @@ services:
     ports:
       - ${LISTEN_PORT}:8888
     volumes:
-      - quant_conf:/home/gordon/.config
-      - quant_data:/home/gordon/.local
-      - ${PWD}/Notebooks:/home/gordon/Notebooks
+      - quant_conf:/home/${USER}/.config
+      - quant_data:/home/${USER}/.local
+      - ${PWD}/Notebooks:/home/${USER}/Notebooks
 
 volumes:
   quant_conf:
